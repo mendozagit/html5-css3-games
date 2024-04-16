@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size:  62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 *,
@@ -9,20 +9,31 @@ html {
   box-sizing: inherit;
 }
 
-h1 span {
-  color: #037bc0;
-}
-
 body {
   font-family: "Raleway", sans-serif;
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 /* Global */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
 }
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
 
 a {
   text-decoration: none;
@@ -45,9 +56,7 @@ img {
 /* Header and main Nav*/
 .site-name {
   margin: 5rem;
-  margin-bottom: 5rem;
   text-align: center;
-  font-size: 4rem;
 }
 
 .main-nav {
@@ -56,11 +65,17 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+
+h1 span {
+  color: #037bc0;
+}
+
 .hero {
   background-image: url("../img/principal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 55rem;
+  background-position: center center;
 }
 
 /*categories*/
@@ -69,7 +84,9 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-
+.categories{
+    margin-top: 5rem;   
+}
 .categories h2 {
   text-align: center;
 }
