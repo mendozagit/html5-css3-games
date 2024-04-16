@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
 
 h1 {
     color: #000;
@@ -7,13 +16,38 @@ h1 span {
     color: #037bc0;
 }
 
-.anchor {
-   text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    color: #037bc0;
 
+/* Global */
+a {
+    text-decoration: none;
+    color: #000;
 }
+.nav-container{
+    border-top: 1px solid #e1e1e1;
+}
+.container {
+   max-width: 1200px;
+   margin-inline: auto;
+   /* margin: 0 auto;*/
+}
+/* Header and main Nav*/
+
+.site-name {
+ margin: 50px;
+ margin-bottom: 50px;
+ text-align: center;
+}
+
+.main-nav {
+    padding: 20px 0;
+ }
+.hero {
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
 
 /* 
 Priorities:
@@ -21,4 +55,12 @@ Priorities:
   id: high priority
   class: medium priority
   tag: low priority
+*/
+
+/*
+Display:
+  block: takes up the full width of the parent element
+  inline: takes up only the width of the content
+  inline-block: takes up the full width of the parent element but allows other elements to be next to it
+  none: hides the element
 */
