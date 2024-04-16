@@ -30,6 +30,11 @@ a {
    margin-inline: auto;
    /* margin: 0 auto;*/
 }
+
+img {
+    max-width: 100%;
+} 
+
 /* Header and main Nav*/
 
 .site-name {
@@ -40,6 +45,9 @@ a {
 
 .main-nav {
     padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
  }
 .hero {
     background-image: url('../img/principal.jpg');
@@ -49,8 +57,14 @@ a {
 }
 
 
+/*categories*/
+.category-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 /* 
-Priorities:
+Priorities:FF
  !important: max priority
   id: high priority
   class: medium priority
