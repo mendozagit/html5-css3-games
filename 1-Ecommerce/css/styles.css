@@ -1,0 +1,24 @@
+
+h1 {
+    color: #000;
+}
+
+h1 span {
+    color: #037bc0;
+}
+
+.anchor {
+   text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #037bc0;
+
+}
+
+/* 
+Priorities:
+ !important: max priority
+  id: high priority
+  class: medium priority
+  tag: low priority
+*/
