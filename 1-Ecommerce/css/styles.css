@@ -33,6 +33,7 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
 } 
 
 /* Header and main Nav*/
@@ -63,6 +64,23 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.categories h2 {
+    text-align: center;
+}
+.category a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.category a:hover {
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 /* 
 Priorities:FF
  !important: max priority
