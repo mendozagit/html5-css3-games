@@ -146,6 +146,12 @@ h1 span {
     text-align: center;
     color: #fff;
 } 
+.product-info h3 {
+  margin:  0;
+} 
+.product-info p {
+  margin: 0 0 .5rem 0;
+} 
 .product-info a{
     color: #fff;
 }
