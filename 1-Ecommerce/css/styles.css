@@ -52,6 +52,13 @@ img {
   display: block;
 }
 
+/* utitilies */
+
+.text-center {
+  text-align: center;
+}
+
+
 /* Header and main Nav*/
 .site-name {
   margin: 5rem;
@@ -105,10 +112,47 @@ h1 span {
 
 /* about us */
 
-/* .about-us{
+.about-us{
+    padding: 10rem 0;
+    margin: 6rem 0; 
+    background-image: 
+    linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), 
+    url("../img/nosotros.jpg");
     
-    background-image: ;
-}  */
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%, 120rem;
+}  
+.about-us-grid{
+    display: flex;
+    justify-content: end;
+}
+.about-us-grid-text{
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: #fff;
+}
+
+
+/* main content */
+
+.main-content{
+
+} 
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}  
+
+.product{
+   
+}
+.product-info{
+    
+}  
+
+
 
 /* 
 Priorities:FF
