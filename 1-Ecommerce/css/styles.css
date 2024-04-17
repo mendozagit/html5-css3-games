@@ -137,20 +137,30 @@ h1 span {
 /* main content */
 
 .main-content{
-
+  padding-top: 5rem;
 } 
-.product-list{
+.product{
+  background-color: #037bc0;
+}
+.product-info {
+    text-align: center;
+    color: #fff;
+} 
+.product-info a{
+    color: #fff;
+}
+.product-info .price {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+/* .product-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-}  
+}   */
 
-.product{
-   
-}
-.product-info{
-    
-}  
+
 
 
 
