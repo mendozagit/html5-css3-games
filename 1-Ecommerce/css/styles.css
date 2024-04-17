@@ -58,6 +58,19 @@ img {
   text-align: center;
 }
 
+.btn {
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color .3s ease-out;
+}
+.btn:hover{
+  background-color: #769602;
+}
+
 
 /* Header and main Nav*/
 .site-name {
@@ -145,6 +158,7 @@ h1 span {
 .product-info {
     text-align: center;
     color: #fff;
+    padding: 2rem;
 } 
 .product-info h3 {
   margin:  0;
@@ -152,13 +166,21 @@ h1 span {
 .product-info p {
   margin: 0 0 .5rem 0;
 } 
-.product-info a{
-    color: #fff;
-}
 .product-info .price {
     font-size: 2.8rem;
     font-weight: 900;
 }
+
+
+/* .product img {
+  transition: transform .3s ease-out;
+  width: 100%;
+  display: block;
+}
+
+.product img:hover {
+    transform: scale(0.9);
+} */
 
 /* .product-list{
     display: grid;
