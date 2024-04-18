@@ -238,3 +238,46 @@ html {
     grid-row: 2 / 4;
     opacity: 0.75;
 }
+.grid-order {
+    /*order apply only when the grid flow is row or column, not custom orders*/
+
+    display: grid;
+    /*grid 3c X 2r*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.grid-order .item:nth-child(1) {
+    /*default: 0  negatives to positives */
+
+    order: 1;
+}
+.grid-order .item:nth-child(2) {
+    /*default: 0  */
+
+    order: 2;
+}
+.grid-order .item:nth-child(5) {
+    /*default: 0  */
+    order: -1;
+}
+
+.grid-align {
+    display: grid;
+    /*grid 3c X 2r*/
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+
+     /* works horizontally inside its grid's cell: start, end, center, stretch */
+    justify-items: center; 
+    
+     /* works vertically its grid's cell: start, end, center, stretch */
+    align-items: center;
+}
+
+.grid-align .item:nth-child(4) {
+    /* works horizontally inside its grid's cell: start, end, center, stretch */
+    justify-self: start;
+    align-self: start;
+}
