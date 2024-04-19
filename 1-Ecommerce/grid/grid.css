@@ -341,3 +341,20 @@ html {
     grid-template-rows: repeat(2, 100px 200px);
     grid-auto-rows: 150px;
 }
+.grid-dynamics{
+    display: grid;
+    /*grid 4c X nr*/
+    grid-template-columns: repeat(4, 100px);
+
+    /*auto-fill: fill the container with as many columns as it can fit */
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-responsive{
+    display: grid;
+    /*grid 4c X nr*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1vh;
+}
