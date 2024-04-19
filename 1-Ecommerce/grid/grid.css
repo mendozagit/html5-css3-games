@@ -281,3 +281,54 @@ html {
     justify-self: start;
     align-self: start;
 }
+
+.grid-align-tracks {
+    display: grid;
+    /*grid 3c X 2r*/
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+
+
+    /* works horizontally inside its parent container: 
+    start,
+    end,
+    center,
+    stretch,
+    space-between,
+    space-around
+    space-evenly */
+    justify-content: space-around; 
+    
+    /* works vertically inside its parent container:
+    start,
+    end,
+    center,
+    stretch,
+    space-between,
+    space-around
+    space-evenly
+    */
+    align-content: space-around;
+
+}
+
+.grid-min-max {
+    display: grid;
+
+    /*grid 4c X nr*/
+    /* grid-template-columns: repeat(4, 1fr); */
+     /* grid-template-columns: repeat(4, minmax(100px, 200px)); */
+
+     /* grid-template-columns: repeat(4, minmax(min-content, 200px)); */
+
+     /* grid-template-columns: repeat(4, minmax(100px, min-content)); */
+
+     /* grid-template-columns: repeat(4, minmax(100px, max-content)); */
+
+     /* grid-template-columns: repeat(4, minmax(min-content, 200px )); */
+
+       grid-template-columns: repeat(4, minmax(min-content, max-content));
+    /* minmax(min, max) */
+    /* grid-auto-columns: minmax(100px, 200px); */
+    /* grid-auto-rows: minmax(100px, 200px); */
+}
