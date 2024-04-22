@@ -175,7 +175,7 @@ h1 span {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .product:nth-child(1) {
