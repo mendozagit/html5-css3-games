@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page name</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -23,7 +23,92 @@
     </div>
 
     <main class="main-content container">
-      <h2 class="text-center">Page name</h2>
+      <h2 class="text-center">Contact</h2>
+
+
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="field">
+            <label for="FisrtName">Fisrt Name</label>
+            <input type="text" id="FisrtName" placeholder="FisrtName" required/>
+          </div>
+          
+          <div class="field">
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" placeholder="Subject"/>
+          </div>
+          
+          <div class="field">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Email"/>
+          </div>
+
+          <div class="field">
+            <label for="Phone">Phone</label>
+            <input type="tel" id="Phone" placeholder="Phone number"/>
+          </div>
+
+          <div class="field">
+            <label for="Message">Message</label>
+            <textarea id="" cols="30" rows="10"> </textarea>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Contry Information</legend>
+
+          <div class="field">
+            <label for="Contry">Contry</label>
+            <select>
+              <option value="1">--Select a contry</option>
+              <option value="2">Argentina</option>
+              <option value="3">Brazil</option>
+              <option value="4">Chile</option>
+              <option value="5">Colombia</option>
+              <option value="6">Ecuador</option>
+              <option value="7">Peru</option>
+              <option value="8">Uruguay</option>
+              <option value="9">Venezuela</option>
+            </select>
+          </div>
+
+          
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <div class="field">
+            <label for="Customer"> Customer</label>
+            <input type="radio" id="Customer" name="PersonType"  value="customer"/>
+          </div>
+
+          <div class="field">
+            <label for="Supplier"> Customer</label>
+            <input type="radio" id="Supplier"  name="PersonType" value="supplier"/>
+          </div>
+          
+          <div class="field">
+            <label for="Category">Category</label>
+            <input list="categories" name="Category"/>
+
+            <datalist id="categories">
+              <option value="Office"/>
+              <option value="Home"/>
+              <option value="Kitchen"/>
+              <option value="Garden"/>
+              <option value="Bedrooms"/>
+            </datalist>
+          </div>
+
+        </fieldset>
+
+        <input type="submit" value="submit form">
+      </form>
     </main>
 
     <footer class="site-footer">
