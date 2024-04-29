@@ -58,6 +58,10 @@ img {
   text-align: center;
 }
 
+.max-width-30 {
+  max-width: 30rem;
+}
+
 .btn {
   background-color: #8cbc00;
   display: block;
@@ -66,6 +70,7 @@ img {
   font-weight: 900;
   padding: 1rem;
   transition: background-color 0.3s ease-out;
+  text-align: center;
 }
 
 .btn:hover {
@@ -255,6 +260,37 @@ h1 span {
   justify-content: center;
 }
 
+
+/* Blog css */
+
+.blog-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+}
+.entry{
+  border-bottom: 2px solid #e1e1e1;
+  padding: 4rem;
+  margin-bottom: 2rem;
+}
+
+.entry:last-of-type{
+  border-bottom: none;
+}
+
+.meta-entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meta-entry p span {
+  font-weight: 700;
+  color: #037bc0;
+}
+.blog-entry-content{
+  width: 70rem;
+  margin: 0 auto;
+}
 /* .grid-footer div {
   flex: 1;
 } */
