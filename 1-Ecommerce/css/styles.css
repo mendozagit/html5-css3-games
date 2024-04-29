@@ -243,10 +243,16 @@ h1 span {
 
 /*about us page*/
 
-.about-content {
+.about-us-content {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+}
+.about-us-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* .grid-footer div {
