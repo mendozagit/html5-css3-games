@@ -71,10 +71,12 @@ img {
   padding: 1rem;
   transition: background-color 0.3s ease-out;
   text-align: center;
+  border: none;
 }
 
 .btn:hover {
   background-color: #769602;
+  cursor: pointer;
 }
 
 /* Header and main Nav*/
@@ -309,6 +311,47 @@ h1 span {
   width: 40rem;
   object-fit: cover;
 }
+
+.contact-form
+{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.contact-form fieldset {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+.contact-form  legend {
+  background-color: #005485;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.field {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.field label {
+ flex-basis: 10rem;
+}
+
+
+.field input:not([type="radio"]),
+.field textarea,
+.field select {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+}
+
+
 /* .grid-footer div {
   flex: 1;
 } */
