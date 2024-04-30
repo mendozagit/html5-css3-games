@@ -136,7 +136,7 @@ h1, h2 {
 }
 .d-flex-8 .box {
     flex-basis: 33.3%;
-    
+    flex-basis: 200px;
 }
 /* 9 */
 .d-flex-9 {
@@ -154,7 +154,7 @@ h1, h2 {
 /* 10 */
 .d-flex-10 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .d-flex-10 .box {
