@@ -154,7 +154,7 @@ h1, h2 {
 /* 10 */
 .d-flex-10 {
     display: flex;
-    flex-wrap: nowrap;
+        flex-wrap: wrap;
 }
 
 .d-flex-10 .box {
@@ -164,16 +164,23 @@ h1, h2 {
 /** 11 */
 .d-flex-11 {
     display: flex;
-}
-.d-flex-11 .box:nth-child(1) {
-    flex-grow: 4;
+    height: 500px;
 }
 .d-flex-11 .box:nth-child(2) {
     flex-grow: 1;
 }
-.d-flex-11 .box:nth-child(3) {
+.d-flex-11 .box:nth-child(1) {
     flex-grow: 1;
 }
+.d-flex-11 .box:nth-child(3) {
+    flex-grow: 2;
+}
+/* .d-flex-11 .box {
+    flex-grow: 1;
+} */
+/* 
+
+ */
 
 /* 12 */
 .d-flex-12 {
@@ -195,5 +202,5 @@ h1, h2 {
 }
 
 .d-flex-13 .box {
-    flex: 1 0 33.3%;
+    flex: 1 1 33.3%;
 }
