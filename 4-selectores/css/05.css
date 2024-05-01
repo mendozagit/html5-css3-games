@@ -1,0 +1,14 @@
+#encabezado{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.texto {
+    color: rgb(255, 115, 0);
+}
+
+#encabezado.texto {
+    font-size: 2rem;
+}
