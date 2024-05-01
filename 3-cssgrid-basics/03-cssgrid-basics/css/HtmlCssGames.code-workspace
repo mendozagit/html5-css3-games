@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "HtmlCssGames",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HtmlCssGames"
+	}
+}
