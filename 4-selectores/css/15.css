@@ -1,0 +1,9 @@
+.primer-letra::first-letter {
+    font-size: 2em;
+    color: purple;
+}
+
+.primer-linea::first-line {
+    font-size: 2em;
+    color: purple;
+}
