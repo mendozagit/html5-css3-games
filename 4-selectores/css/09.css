@@ -1,0 +1,9 @@
+/* .admin:nth-child(1){
+    border: 1px solid red;
+    background-color: yellow;
+} */
+
+.admin > div + p {
+    border: 1px solid red;
+    background-color: yellow;
+}

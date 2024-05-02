@@ -1,0 +1,13 @@
+/* .codigo ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+} */
+
+/* 
+ul li:nth-child(1) {
+    border: 2px solid red;
+} */
+
+
+ul li:first-child {
+    border: 2px solid purple;
+}

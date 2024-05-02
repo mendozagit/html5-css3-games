@@ -1,0 +1,18 @@
+/* a[href^="http"] {
+    display: block;
+    color: red;
+} */
+
+a[href$=".com"] {
+    display: block;
+    color: red;
+}
+
+a{
+    color: purple;
+}
+
+input[type="tel"]{
+    border: 1px solid red;
+    background-color: yellow;
+}
