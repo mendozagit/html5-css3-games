@@ -1,0 +1,37 @@
+{
+
+	"images": {
+		"prefix": "im",
+		"body": [
+			"<picture>",
+				"\t<source srcset=\"img/$1.avif\" type=\"image/avif\">",
+				"\t<source srcset=\"img/$2.webp\" type=\"image/webp\">",
+				"\t<img loading=\"lazy\" src=\"img/$3.jpg\" alt=\"$4\" width=\"500\" height=\"500\">",
+			"</picture>"
+		],
+		"description": "Image tag"
+	},
+
+	"responsiveImages": {
+		"prefix": "imr",
+		"body": [
+			"<picture>",
+				"<source", 
+					"\t sizes=\"1920w, 1280w, 640w\" ",
+					"\t srcset=\"img/imagen.avif 1920w, \n\t\t\t img/imagen-1280.avif 1280w, \n\t\t\t img/imagen-640.avif 640w\" ",
+					"\t type=\"image/avif\">",
+				"<source", 
+					"\t sizes=\"1920w, 1280w, 640w\" ",
+					"\t srcset=\"img/imagen.webp 1920w, \n\t\t\t img/imagen-1280.webp 1280w, \n\t\t\t img/imagen-640.webp 640w\" ",
+					"\t type=\"image/webp\">",
+				"<source", 
+					"\t sizes=\"1920w, 1280w, 640w\" ",
+					"\t srcset=\"img/imagen.jpg 1920w, \n\t\t\t img/imagen-1280.jpg 1280w, \n\t\t\t img/imagen-640.jpg 640w\" ",
+					"\t type=\"image/jpeg\">",
+				"<img loading=\"lazy\" decoding=\"async\" src=\"img/imagen.jpg\" lazyalt=\"imagen\" width=\"500\" height=\"300\">",
+			"</picture>"
+		],
+		"description": "Responsive images with different formats and sizes"
+	}
+	
+}
