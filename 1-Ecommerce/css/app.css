@@ -119,7 +119,19 @@ img {
 }
 /** Categorias **/
 .categorias {
-    padding-top: 5rem;
+    padding: 5rem 0;
+    
+}
+.categoria {
+    margin-bottom: 2rem;
+}
+.categoria img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .categoria {
+        margin-bottom:0;
+    }
 }
 .categoria a {
     text-align: center;
@@ -132,10 +144,13 @@ img {
     color: #FFFFFF;
     border-bottom-right-radius: 1rem;
 }
-.listado-categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+
+@media (min-width: 768px) {
+    .listado-categorias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
 
 /** Bloque Nosotros */
