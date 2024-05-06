@@ -95,17 +95,28 @@ img {
 .nav-principal {
     padding: 2rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
 }
-
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 .hero {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 55rem;
+    height: 25rem;
 }
-
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}
 /** Categorias **/
 .categorias {
     padding-top: 5rem;
